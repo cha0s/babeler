@@ -1,6 +1,6 @@
 {
   "name": "babeler",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Babeler interprets Babel AST",
   "main": "index.js",
   "author": "cha0s",
