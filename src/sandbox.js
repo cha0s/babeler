@@ -1,4 +1,5 @@
-import * as types from '@babel/types';
+import {ALIAS_KEYS, VISITOR_KEYS} from '@babel/types';
+import * as types from '@babel/types/lib/validators/generated';
 
 import Scope from './scope';
 
@@ -86,7 +87,7 @@ export default class Sandbox {
     const {type} = node;
     let evaluator = `evaluate${type}`;
     if (!this[evaluator]) {
-      const keys = types.ALIAS_KEYS[type];
+      const keys = ALIAS_KEYS[type];
       for (let i = keys.length - 1; i >= 0; --i) {
         // eslint-disable-next-line no-cond-assign
         if (this[evaluator = `evaluate${keys[i]}`]) {
@@ -645,7 +646,7 @@ export default class Sandbox {
   }
 
   setNextScope(node, scope = this.nodeScope(node)) {
-    const nodes = this.nextNodes(node, types.VISITOR_KEYS[node.type]);
+    const nodes = this.nextNodes(node, VISITOR_KEYS[node.type]);
     for (let i = 0; i < nodes.length; i++) {
       this.setNodeScope(nodes[i], scope);
     }
@@ -660,7 +661,7 @@ export default class Sandbox {
   }
 
   * traverse(node) {
-    let keys = types.VISITOR_KEYS[node.type];
+    let keys = VISITOR_KEYS[node.type];
     if (!keys) {
       return;
     }
