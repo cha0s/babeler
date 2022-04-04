@@ -936,10 +936,10 @@
     minimatch "^3.0.4"
     strip-json-comments "^3.1.1"
 
-"@flecks/core@^1.0.0":
-  version "1.0.0"
-  resolved "https://registry.npmjs.org/@flecks/core/-/core-1.0.0.tgz#4b0bf7ab086ac407fa6f83ad1110a4b6e732a9f0"
-  integrity sha512-/jVPuOa1BOw+Pnci+txWpgtcmRiB4n1Nkmv9N36tlMLEEcNTA11CKukRPy1JSwGlRMlqUmdwVdQht/fMC4h1mA==
+"@flecks/core@^1.4.1":
+  version "1.4.1"
+  resolved "http://verdaccio.localhost/@flecks%2fcore/-/core-1.4.1.tgz#c1c5d51fd8a60e49d192c83e97718ba44a132d3e"
+  integrity sha512-blvoBspB6v0fbWtLh49I5GA3Sz2lQaEjTZdBKiqx1DldHN1ZvpDz4YpVQlwKJ0oMreKow4h+CHw/YC36bZvtdA==
   dependencies:
     "@babel/core" "^7.12.10"
     "@babel/plugin-proposal-optional-chaining" "^7.12.16"
@@ -947,36 +947,43 @@
     "@babel/preset-env" "^7.12.11"
     "@babel/register" "^7.12.10"
     "@neutrinojs/airbnb" "^9.4.0"
+    "@neutrinojs/banner" "^9.4.0"
+    "@neutrinojs/clean" "^9.5.0"
     "@neutrinojs/compile-loader" "^9.5.0"
     "@neutrinojs/copy" "^9.4.0"
-    "@neutrinojs/node" "^9.1.0"
+    babel-merge "^3.0.0"
     babel-plugin-prepend "^1.0.2"
     chai "4.2.0"
     commander "^8.3.0"
     debug "4.3.1"
+    enhanced-resolve "^5.9.2"
     eslint "^7.0.0"
     eslint-import-resolver-webpack "0.13.0"
-    js-yaml "3.14.0"
+    js-yaml "4.1.0"
+    jsonparse "^1.3.1"
     lodash.flatten "^4.4.0"
     lodash.get "^4.4.2"
     lodash.intersection "^4.4.0"
     lodash.set "^4.3.2"
     lodash.without "^4.4.0"
     neutrino "^9.4.0"
+    pirates "^4.0.5"
     rimraf "^3.0.2"
     source-map-support "0.5.19"
+    supports-color "9.2.1"
     webpack "^4"
     webpack-cli "^3"
     webpack-node-externals "2.5.2"
 
-"@flecks/fleck@^1.0.0":
-  version "1.0.0"
-  resolved "https://registry.npmjs.org/@flecks/fleck/-/fleck-1.0.0.tgz#45dc5eab566cb794fdab185fc8e0c74b97066ad9"
-  integrity sha512-rcCqlysvChvuDg05X8xye5oASIlz00DbTO0AcvK32oEELZ4JofLLszH/VmkxzCyvqSqzBx1U2Vn5MfyM0yAiRw==
+"@flecks/fleck@^1.4.1":
+  version "1.4.1"
+  resolved "http://verdaccio.localhost/@flecks%2ffleck/-/fleck-1.4.1.tgz#07b3b67f283db243065d047d221803c9d9d71ff4"
+  integrity sha512-rL1H/IXOQs8+xuYIAIVhOTuHBwNP9lVywUudM/kR2BOuPsVioRwXBCTS1y2vxiP3DtX/egLwDFuS/7Dl9UofyQ==
   dependencies:
-    "@flecks/core" "^1.0.0"
-    "@neutrinojs/node" "^9.4.0"
+    "@flecks/core" "^1.4.1"
+    babel-merge "^3.0.0"
     chokidar "^3.5.3"
+    clear-module "^4.1.2"
     debug "^4.3.3"
     glob "^7.2.0"
     mocha "^8.3.2"
@@ -1026,19 +1033,19 @@
     eslint-plugin-react "^7.21.5"
     eslint-plugin-react-hooks "^4.2.0"
 
-"@neutrinojs/banner@9.5.0":
+"@neutrinojs/banner@^9.4.0":
   version "9.5.0"
-  resolved "https://registry.npmjs.org/@neutrinojs/banner/-/banner-9.5.0.tgz#ee8df39db5d76033211a1811428e444a06d7222f"
+  resolved "http://verdaccio.localhost/@neutrinojs%2fbanner/-/banner-9.5.0.tgz#ee8df39db5d76033211a1811428e444a06d7222f"
   integrity sha512-SL4nT0V1Wykf+LcRlCp/L8Frt4dk7MZITToC+OeDz2w6V7gg8YfEwDfdEg+aampjyUoxaq+A02ZyZP1TyRDtLA==
 
-"@neutrinojs/clean@9.5.0":
+"@neutrinojs/clean@^9.5.0":
   version "9.5.0"
-  resolved "https://registry.npmjs.org/@neutrinojs/clean/-/clean-9.5.0.tgz#77cfb0add1584741c7501f5e12ad206b67f216bf"
+  resolved "http://verdaccio.localhost/@neutrinojs%2fclean/-/clean-9.5.0.tgz#77cfb0add1584741c7501f5e12ad206b67f216bf"
   integrity sha512-eJjIt8KQMQR1BemupM3SPPIQ8izsaZIet6ncJ/OALEAn/B8BwNQ4GaAMlj6oXi5r9+84OjT7nSYAwit+mZ/fjg==
   dependencies:
     clean-webpack-plugin "^3.0.0"
 
-"@neutrinojs/compile-loader@9.5.0", "@neutrinojs/compile-loader@^9.5.0":
+"@neutrinojs/compile-loader@^9.5.0":
   version "9.5.0"
   resolved "https://registry.npmjs.org/@neutrinojs/compile-loader/-/compile-loader-9.5.0.tgz#162387669444a9076a7de7ea705dedf90b0dcc67"
   integrity sha512-JdOH6GQXBMHHELmkzhFhKwWsIXTUUAIp0Ze9DaBlLveXVxUbZAD7NgGsvkVhlllHgfFnyrUaUhGJqlmrNFptZg==
@@ -1061,30 +1068,6 @@
     babel-eslint "^10.1.0"
     eslint-loader "^4.0.2"
     eslint-plugin-babel "^5.3.1"
-
-"@neutrinojs/node@^9.1.0", "@neutrinojs/node@^9.4.0":
-  version "9.5.0"
-  resolved "https://registry.npmjs.org/@neutrinojs/node/-/node-9.5.0.tgz#41da54a6af461ca329b194063640a2aa0e84f32e"
-  integrity sha512-kJjdEKCdBnKWD51Qnm6REAUdaLrJc3qjA3wFcJ11v1wddu7Ihaa2S4qNjcrCDYrxSPD1vVoUlE+nyucsX+dO4w==
-  dependencies:
-    "@babel/core" "^7.12.10"
-    "@babel/plugin-syntax-dynamic-import" "^7.8.3"
-    "@babel/preset-env" "^7.12.11"
-    "@neutrinojs/banner" "9.5.0"
-    "@neutrinojs/clean" "9.5.0"
-    "@neutrinojs/compile-loader" "9.5.0"
-    "@neutrinojs/start-server" "9.5.0"
-    babel-merge "^3.0.0"
-    deepmerge "^1.5.2"
-    lodash.omit "^4.5.0"
-    webpack-node-externals "^1.7.2"
-
-"@neutrinojs/start-server@9.5.0":
-  version "9.5.0"
-  resolved "https://registry.npmjs.org/@neutrinojs/start-server/-/start-server-9.5.0.tgz#f0d21a7f2c9c57897769e56ee042bd1d242275a4"
-  integrity sha512-gNRISZAbJpAZRIUfIxCWFEzEhfM/4ibmbGzz9jFJloH+fQw6JpOWF6bhhBZNDFFTj/6GKFi40CJrte4V3ywNBA==
-  dependencies:
-    start-server-webpack-plugin "^2.2.5"
 
 "@types/glob@^7.1.1":
   version "7.2.0"
@@ -1870,7 +1853,7 @@ call-bind@^1.0.0, call-bind@^1.0.2:
     function-bind "^1.1.1"
     get-intrinsic "^1.0.2"
 
-callsites@^3.0.0:
+callsites@^3.0.0, callsites@^3.1.0:
   version "3.1.0"
   resolved "https://registry.npmjs.org/callsites/-/callsites-3.1.0.tgz#b3630abd8943432f54b3f0519238e33cd7df2f73"
   integrity sha512-P8BjAsXvZS+VIDUI11hHCQEv74YT67YUi5JJFNWIqL235sBmjX4+qx9Muvls5ivyNENctx46xQLQ3aTuE7ssaQ==
@@ -2021,6 +2004,14 @@ clean-webpack-plugin@^3.0.0:
   dependencies:
     "@types/webpack" "^4.4.31"
     del "^4.1.1"
+
+clear-module@^4.1.2:
+  version "4.1.2"
+  resolved "http://verdaccio.localhost/clear-module/-/clear-module-4.1.2.tgz#5a58a5c9f8dccf363545ad7284cad3c887352a80"
+  integrity sha512-LWAxzHqdHsAZlPlEyJ2Poz6AIs384mPeqLVCru2p0BrP9G/kVGuhNyZYClLO6cXlnuJjzC8xtsJIuMjKqLXoAw==
+  dependencies:
+    parent-module "^2.0.0"
+    resolve-from "^5.0.0"
 
 cliui@^5.0.0:
   version "5.0.0"
@@ -2501,6 +2492,14 @@ enhanced-resolve@^4.1.1, enhanced-resolve@^4.5.0:
     graceful-fs "^4.1.2"
     memory-fs "^0.5.0"
     tapable "^1.0.0"
+
+enhanced-resolve@^5.9.2:
+  version "5.9.2"
+  resolved "http://verdaccio.localhost/enhanced-resolve/-/enhanced-resolve-5.9.2.tgz#0224dcd6a43389ebfb2d55efee517e5466772dd9"
+  integrity sha512-GIm3fQfwLJ8YZx2smuHpBKkXC1yOk+OBEmKckVyL0i/ea8mqDEykK3ld5dgH1QYPNyT/lIllxV2LULnxCHaHkA==
+  dependencies:
+    graceful-fs "^4.2.4"
+    tapable "^2.2.0"
 
 enquirer@^2.3.5:
   version "2.3.6"
@@ -3237,7 +3236,7 @@ globby@^7.1.1:
     pify "^3.0.0"
     slash "^1.0.0"
 
-graceful-fs@^4.1.11, graceful-fs@^4.1.15, graceful-fs@^4.1.2, graceful-fs@^4.1.6, graceful-fs@^4.2.0:
+graceful-fs@^4.1.11, graceful-fs@^4.1.15, graceful-fs@^4.1.2, graceful-fs@^4.1.6, graceful-fs@^4.2.0, graceful-fs@^4.2.4:
   version "4.2.9"
   resolved "https://registry.npmjs.org/graceful-fs/-/graceful-fs-4.2.9.tgz#041b05df45755e587a24942279b9d113146e1c96"
   integrity sha512-NtNxqUcXgpW2iMrfqSfR73Glt39K+BLwWsPs94yR63v45T0Wbej7eRmL5cWfwEgqXnmjQp3zaJTshdRW/qC2ZQ==
@@ -3714,18 +3713,17 @@ javascript-stringify@^2.0.1:
   resolved "https://registry.npmjs.org/js-tokens/-/js-tokens-4.0.0.tgz#19203fb59991df98e3a287050d4647cdeaf32499"
   integrity sha512-RdJUflcE3cUzKiMqQgsCu06FPu9UdIJO0beYbPhHN4k6apgJtifcoCtT9bcxOpYBtpD2kCM6Sbzg4CausW/PKQ==
 
-js-yaml@3.14.0:
-  version "3.14.0"
-  resolved "https://registry.npmjs.org/js-yaml/-/js-yaml-3.14.0.tgz#a7a34170f26a21bb162424d8adacb4113a69e482"
-  integrity sha512-/4IbIeHcD9VMHFqDR/gQ7EdZdLimOvW2DdcxFjdyyZ9NsbS+ccrXqVWDtab/lRl5AlUqmpBx8EhPaWR+OtY17A==
-  dependencies:
-    argparse "^1.0.7"
-    esprima "^4.0.0"
-
 js-yaml@4.0.0:
   version "4.0.0"
   resolved "https://registry.npmjs.org/js-yaml/-/js-yaml-4.0.0.tgz#f426bc0ff4b4051926cd588c71113183409a121f"
   integrity sha512-pqon0s+4ScYUvX30wxQi3PogGFAlUyH0awepWvwkj4jD4v+ova3RiYw8bmA6x2rDrEaj8i/oWKoRxpVNW+Re8Q==
+  dependencies:
+    argparse "^2.0.1"
+
+js-yaml@4.1.0:
+  version "4.1.0"
+  resolved "http://verdaccio.localhost/js-yaml/-/js-yaml-4.1.0.tgz#c1fb65f8f5017901cdd2c951864ba18458a10602"
+  integrity sha512-wpxZs9NoxZaJESJGIZTyDEaYpl0FKSA+FB9aJiyemKhMwkxQg63h4T1KJgUGHpTqPDNRcmmYLugrRjJlBtWvRA==
   dependencies:
     argparse "^2.0.1"
 
@@ -3787,6 +3785,11 @@ jsonfile@^4.0.0:
   integrity sha1-h3Gq4HmbZAdrdmQPygWPnBDjPss=
   optionalDependencies:
     graceful-fs "^4.1.6"
+
+jsonparse@^1.3.1:
+  version "1.3.1"
+  resolved "http://verdaccio.localhost/jsonparse/-/jsonparse-1.3.1.tgz#3f4dae4a91fac315f71062f8521cc239f1366280"
+  integrity sha1-P02uSpH6wxX3EGL4UhzCOfE2YoA=
 
 "jsx-ast-utils@^2.4.1 || ^3.0.0", jsx-ast-utils@^3.2.1:
   version "3.2.1"
@@ -3922,11 +3925,6 @@ lodash.merge@^4.6.2:
   version "4.6.2"
   resolved "https://registry.npmjs.org/lodash.merge/-/lodash.merge-4.6.2.tgz#558aa53b43b661e1925a0afdfa36a9a1085fe57a"
   integrity sha512-0KpjqXRVvrYyCsX1swR/XTK0va6VQkQM6MNo7PqW77ByjAhoARA8EfrP1N4+KlKj8YS0ZUCtRT/YUuhyYDujIQ==
-
-lodash.omit@^4.5.0:
-  version "4.5.0"
-  resolved "https://registry.npmjs.org/lodash.omit/-/lodash.omit-4.5.0.tgz#6eb19ae5a1ee1dd9df0b969e66ce0b7fa30b5e60"
-  integrity sha1-brGa5aHuHdnfC5aeZs4Lf6MLXmA=
 
 lodash.set@^4.3.2:
   version "4.3.2"
@@ -4487,6 +4485,13 @@ parent-module@^1.0.0:
   dependencies:
     callsites "^3.0.0"
 
+parent-module@^2.0.0:
+  version "2.0.0"
+  resolved "http://verdaccio.localhost/parent-module/-/parent-module-2.0.0.tgz#fa71f88ff1a50c27e15d8ff74e0e3a9523bf8708"
+  integrity sha512-uo0Z9JJeWzv8BG+tRcapBKNJ0dro9cLyczGzulS6EfeyAdeC9sbojtW6XwvYxJkEne9En+J2XEl4zyglVeIwFg==
+  dependencies:
+    callsites "^3.1.0"
+
 parse-asn1@^5.0.0, parse-asn1@^5.1.5:
   version "5.1.6"
   resolved "https://registry.npmjs.org/parse-asn1/-/parse-asn1-5.1.6.tgz#385080a3ec13cb62a62d39409cb3e88844cdaed4"
@@ -4927,6 +4932,11 @@ resolve-from@^4.0.0:
   resolved "https://registry.npmjs.org/resolve-from/-/resolve-from-4.0.0.tgz#4abcd852ad32dd7baabfe9b40e00a36db5f392e6"
   integrity sha512-pb/MYmXstAkysRFx8piNI1tGFNQIFA3vkE3Gq4EuA1dF6gHp/+vgZqsCGJapvy8N3Q+4o7FwvquPJcnZ7RYy4g==
 
+resolve-from@^5.0.0:
+  version "5.0.0"
+  resolved "http://verdaccio.localhost/resolve-from/-/resolve-from-5.0.0.tgz#c35225843df8f776df21c57557bc087e9dfdfc69"
+  integrity sha512-qYg9KP24dD5qka9J47d0aVky0N+b4fTU89LN9iDnjB5waksiC49rvMB0PrUJQGoTmH50XPiqOvAjDfaijGxYZw==
+
 resolve-url@^0.2.1:
   version "0.2.1"
   resolved "https://registry.npmjs.org/resolve-url/-/resolve-url-0.2.1.tgz#2c637fe77c893afd2a663fe21aa9080068e2052a"
@@ -5242,11 +5252,6 @@ ssri@^6.0.1:
   dependencies:
     figgy-pudding "^3.5.1"
 
-start-server-webpack-plugin@^2.2.5:
-  version "2.2.5"
-  resolved "https://registry.npmjs.org/start-server-webpack-plugin/-/start-server-webpack-plugin-2.2.5.tgz#4a2838759b0f36acd11b0b2f5f196f289ae29d31"
-  integrity sha512-DRCkciwCJoCFZ+wt3wWMkR1M2mpVhJbUKFXqhK3FWyIUKYb42NnocH5sMwqgo+nPNHupqNwK/v8lgfBbr2NKdg==
-
 static-extend@^0.1.1:
   version "0.1.2"
   resolved "https://registry.npmjs.org/static-extend/-/static-extend-0.1.2.tgz#60809c39cbff55337226fd5e0b520f341f1fb5c6"
@@ -5395,6 +5400,11 @@ supports-color@8.1.1:
   dependencies:
     has-flag "^4.0.0"
 
+supports-color@9.2.1:
+  version "9.2.1"
+  resolved "http://verdaccio.localhost/supports-color/-/supports-color-9.2.1.tgz#599dc9d45acf74c6176e0d880bab1d7d718fe891"
+  integrity sha512-Obv7ycoCTG51N7y175StI9BlAXrmgZrFhZOb0/PyjHBher/NmsdBgbbQ1Inhq+gIhz6+7Gb+jWF2Vqi7Mf1xnQ==
+
 supports-color@^5.3.0:
   version "5.5.0"
   resolved "https://registry.npmjs.org/supports-color/-/supports-color-5.5.0.tgz#e2e69a44ac8772f78a1ec0b35b689df6530efc8f"
@@ -5441,6 +5451,11 @@ tapable@^1.0.0, tapable@^1.1.3:
   version "1.1.3"
   resolved "https://registry.npmjs.org/tapable/-/tapable-1.1.3.tgz#a1fccc06b58db61fd7a45da2da44f5f3a3e67ba2"
   integrity sha512-4WK/bYZmj8xLr+HUCODHGF1ZFzsYffasLUgEiMBY4fgtltdO6B4WJtlSbPaDTLpYTcGVwM2qLnFTICEcNxs3kA==
+
+tapable@^2.2.0:
+  version "2.2.1"
+  resolved "http://verdaccio.localhost/tapable/-/tapable-2.2.1.tgz#1967a73ef4060a82f12ab96af86d52fdb76eeca0"
+  integrity sha512-GNzQvQTOIP6RyTfE2Qxb8ZVlNmw0n88vp1szwWRimP02mnTsx3Wtn5qRdqY9w2XduFNUgvOwhNnQsjwCp+kqaQ==
 
 terser-webpack-plugin@^1.4.3:
   version "1.4.5"
@@ -5754,11 +5769,6 @@ webpack-node-externals@2.5.2:
   version "2.5.2"
   resolved "https://registry.npmjs.org/webpack-node-externals/-/webpack-node-externals-2.5.2.tgz#178e017a24fec6015bc9e672c77958a6afac861d"
   integrity sha512-aHdl/y2N7PW2Sx7K+r3AxpJO+aDMcYzMQd60Qxefq3+EwhewSbTBqNumOsCE1JsCUNoyfGj5465N0sSf6hc/5w==
-
-webpack-node-externals@^1.7.2:
-  version "1.7.2"
-  resolved "https://registry.npmjs.org/webpack-node-externals/-/webpack-node-externals-1.7.2.tgz#6e1ee79ac67c070402ba700ef033a9b8d52ac4e3"
-  integrity sha512-ajerHZ+BJKeCLviLUUmnyd5B4RavLF76uv3cs6KNuO8W+HuQaEs0y0L7o40NQxdPy5w0pcv8Ew7yPUAQG0UdCg==
 
 webpack-sources@^1.4.0, webpack-sources@^1.4.1:
   version "1.4.3"
